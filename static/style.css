@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+    --primary: #1f2e88;
+    --secondary: #2f66d4;
+    --hover: #a2d9f5;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border: 2rem solid rgba(0, 0, 0, 1);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 3rem 7%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.footer {
+    font-size: 14px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: blue;
+}
+
+.btn:hover {
+    background: var(--secondary);
+}
+
+
+/* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    display: flex;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+
+/* .header .logo-img {
+  color: var(--primary);
+  padding-right: 0.5rem;
+} */
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--primary);
+}
+
+.header .btn {
+    margin-top: 0;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+    margin-left: 1.7rem;
+}
+
+#menu-btn:hover {
+    color: var(--primary);
+}
+
+
+/* header end */
+
+
+/* home */
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../static/images/cover2.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 100rem;
+    padding-left: 6rem;
+    padding-top: 10rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.home .content p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+
+/* home end */
+
+
+/* facts */
+
+.facts {
+    background: var(--light-bg);
+}
+
+.facts .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.facts .box-container .box {
+    padding: 4rem;
+    text-align: center;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+}
+
+.facts .box-container .box:hover {
+    background: var(--hover);
+}
+
+.facts .box-container .box img {
+    margin: 1rem 0;
+    height: 10rem;
+}
+
+.facts .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.facts .box-container .box h1 {
+    font-size: 2rem;
+    padding: 5rem 0;
+    color: var(--black);
+}
+
+.facts .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+/* facts end */
+
+
+/* blog */
+
+.blog .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blog .box-container .box {
+    /* border: var(--border); */
+    box-shadow: var(--box-shadow);
+}
+
+.blog .box-container .box .image {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blog .box-container .box .content {
+    padding: 2rem 1.5rem;
+}
+
+.blog .box-container .box .content .link {
+    display: inline-block;
+    margin-bottom: 3rem;
+    padding: 0.6rem 1.5rem;
+    background: var(--primary);
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+.blog .box-container .box .content .link:hover {
+    background: var(--secondary);
+}
+
+.blog .box-container .box .content .icons {
+    padding-bottom: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog .box-container .box .content .icons a {
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.blog .box-container .box .content .icons a:hover {
+    color: var(--primary);
+}
+
+.blog .box-container .box .content .icons a i {
+    color: var(--primary);
+    padding-right: 0.5rem;
+}
+
+.blog .box-container .box .content h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.blog .box-container .box .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+/* blog end */
+
+
+/* form */
+
+.consule {
+    background: var(--light-bg);
+}
+
+.description {
+    font-size: 1.7rem;
+    text-align: center;
+    /* Rata tengah */
+    color: var(--light-color);
+    margin-bottom: 2rem;
+}
+
+.form-consule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.form-group .form-control {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    background: var(--white);
+    border: 1px solid var(--light-color);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.btn-primary {
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    background: var(--primary);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+}
+
+.footer {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--white);
+    color: var(--light-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #17a2b8;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    /* Atur ukuran teks pada sel tabel */
+}
+
+td {
+    background-color: #fff;
+    border: 5px solid #eee;
+}
+
+td:nth-child(2) {
+    width: 200px;
+}
+
+th {
+    background-color: #17a2b8;
+    /* Warna latar belakang header */
+    color: white;
+    /* Warna teks putih pada header */
+    text-align: center;
+}
+
+input[type="radio"] {
+    margin-right: 25px;
+    /* Menambahkan margin sebelah kanan pada radio button */
+    margin-left: 25px;
+}
+
+input[type="submit"] {
+    background-color: #45ce17;
+    /* Warna latar belakang hijau */
+    color: white;
+    /* Warna teks putih */
+    padding: 12px 16px;
+    /* Memberikan padding pada tombol */
+    border: none;
+    /* Menghapus border */
+    border-radius: 4px;
+    /* Memberikan border-radius */
+    cursor: pointer;
+    /* Mengubah cursor menjadi pointer saat dihover */
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    /* Warna latar belakang hijau yang lebih gelap saat dihover */
+}
+
+.consule h3 {
+    margin-top: 3rem;
+    /* Menambahkan jarak atas */
+    font-size: 1.7rem;
+}
+
+
+/* Webcam */
+
+.webcam {
+    margin-top: 50px;
+}
+
+.webcam .heading {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: var(--light-bg);
+  box-shadow: var(--box-shadow); */
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.webcam-video {
+    width: 320px;
+    /* Mengubah ukuran lebar video */
+    height: 240px;
+    /* Mengubah ukuran tinggi video */
+}

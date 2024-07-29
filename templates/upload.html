@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batik Classification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="../images/logo.png" class="logo">Nami Batik
+      </a>
+        <nav class="navbar">
+            <a href="#facts">Jenis Batik</a>
+            <a href="#blog">Blog</a>
+            <a href="#consule">Deteksi Batik</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>"Batik adalah jendela ke dalam jiwa Indonesia."</h3>
+            <a href="#consule" class="btn">Deteksi Batik Sekarang!</a>
+        </div>
+    </section>
+
+    <section class="facts" id="facts">
+        <h1 class="heading">Jenis Batik</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="" />
+                <h3>Bali</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="" />
+                <h3>Betawi</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="" />
+                <h3>Celup</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="" />
+                <h3>Cendrawasih</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/5.jpg') }}" alt="" />
+                <h3>Ceplok</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="" />
+                <h3>Ciamis</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/7.jpg') }}" alt="" />
+                <h3>Garutan</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/8.jpg') }}" alt="" />
+                <h3>Gentongan</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/9.jpg') }}" alt="" />
+                <h3>Kawung</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/10.jpg') }}" alt="" />
+                <h3>Keraton</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/11.jpg') }}" alt="" />
+                <h3>Lasem</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/12.jpg') }}" alt="" />
+                <h3>Megamendung</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/13.jpg') }}" alt="" />
+                <h3>Parang</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/14.jpg') }}" alt="" />
+                <h3>Pekalongan</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/15.jpg') }}" alt="" />
+                <h3>Priangan</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/16.jpg') }}" alt="" />
+                <h3>Sekar</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/17.jpg') }}" alt="" />
+                <h3>Sidoluhur</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/18.jpg') }}" alt="" />
+                <h3>Sidomukti</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/19.jpg') }}" alt="" />
+                <h3>Sogan</h3>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/20.jpg') }}" alt="" />
+                <h3>Tambal</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <h1 class="heading">Blog Batik</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/b1.jpg') }}" alt="" />
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <a href=""><i class="fas fa-calendar"></i>Maret 2020</a>
+                    </div>
+                    <h3>Memahami Tentang Sejarah Batik Indonesia dan Ragam-ragamnya</h3>
+                    <p>
+                        Sejarah batik di Indonesia, erat kaitannya dengan perkembangan dari Kerajaan Majapahit pada era penyebaran
+                    </p>
+                    <a href="https://www.gramedia.com/literasi/sejarah-batik/" class="btn">Baca selengkapnya</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="{{ url_for('static', filename='images/b2.jpg') }}"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href=""><i class="fas fa-calendar"></i>Oktober 2019</a>
+                </div>
+                <h3>6 Fakta Unik Tentang Batik yang Wajib Diketahui Millennial</h3>
+                <p>
+                    Batik merupakan satu warisan budaya Indonesia yang patut kamu lestarikan. Satu caranya adalah dengan bangga
+                </p>
+                <a href="https://www.idntimes.com/hype/fun-fact/rahmadila-eka-putri/fakta-tentang-batik-c1c2" class="btn">Baca selengkapnya</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="{{ url_for('static', filename='images/b3.jpg') }}"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href=""><i class="fas fa-calendar"></i>Februari 2023</a>
+            </div>
+            <h3>Pengertian Batik: Karakteristik, Jenis, Motif Dan Maknanya</h3>
+            <p>
+                Batik merupakan hasil karya dari tangan manusia secara langsung dengan menggunakan canting sebagai media
+            </p>
+            <a href="https://www.detik.com/edu/detikpedia/d-6553022/pengertian-batik-karakteristik-jenis-motif-dan-maknanya" class="btn">Baca selengkapnya</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consule" id="consule">
+      <h1 class="heading">Deteksi Jenis Batik</h1>
+      <p class="description">
+        Algoritma yang digunakan untuk mendeteksi jenis batik adalah VGG16.
+      </p>
+      <form method="POST" enctype="multipart/form-data" class="form-consule">
+        <div class="form-group">
+          <label for="file">Unggah Gambar Batik</label>
+          <input type="file" name="file" id="file" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Deteksi</button>
+      </form>
+      {% if prediction %}
+      <h3>Jenis Batik: {{ prediction }}</h3>
+      {% endif %}
+
+      <div class="webcam"  style="margin-top: 50px;">
+        <h1 class="heading">Webcam Deteksi Batik</h1>
+        <div class="video-container">
+          <img src="{{ url_for('video_feed') }}" width="640" height="480">
+        </div>
+      </div>
+    </section>
+    </section>
+    <section class="footer">
+      <p>&copy; 2024 Nami Batik. All rights reserved.</p>
+    </section>
+    
+      
+
+    <!-- Section 3: Deteksi Batik Classification
+    <div id="section3" class="section">
+      <h2>Deteksi Jenis Batik</h2>
+      <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="file">Upload Gambar Batik</label>
+          <input type="file" name="file" id="file" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      {% if prediction %}
+      <h3>Hasil Prediksi: {{ prediction }}</h3>
+      {% endif %}
+    </div> -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </body>
+</html>
